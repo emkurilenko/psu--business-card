@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right top, #141414, #1c1c1c, #252525, #2e2e2e, #373737);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right top, #afff8e, #5ef8b7, #00ebdc, #00daf5, #2ac6fc, #46c4fb, #59c1fa, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    background-repeat: no-repeat;
 	margin: 0rem;
 	min-height: 100vh;
 	font-family: Futura, sans-serif;
