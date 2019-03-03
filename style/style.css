@@ -4,47 +4,40 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    background-image: linear-gradient(to right top, #afff8e, #5ef8b7, #00ebdc, #00daf5, #2ac6fc, #46c4fb, #59c1fa, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    background-repeat: no-repeat;
-	margin: 0rem;
-	min-height: 100vh;
-	font-family: Futura, sans-serif;
-}
-#canvas{
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	z-index: -1;
+    margin: 0rem;
+    font-family: Futura, sans-serif;
 }
 
-.text h1 {
-	opacity: 0.9
-}
-
-.main-text {
-    color: #fff;
-    text-transform: uppercase;
-    min-width: 50vw;
-    height: 80vh;
-    font-size: 8vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-footer {
-    display: flex;
-    height: 50px;
+.canvas-container{
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8f9ce1, #859ee1, #7ba0e0, #729adb, #6995d6, #608fd2, #568acd);    background-repeat: no-repeat;
+    height: 100vh;   
+}
+#canvas {
     width: 100%;
-    align-items: center;
+}
+
+header {    
+    min-height: 100vh;
+}
+
+#title-header {
+    display: flex;  
     justify-content: center;
-    text-align: center;
-    color: #fff;
-    font-size: 1.5vmin;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    height: 100vh;
+    font-size: 5vmin;
+    opacity: 1;
 }
 
 nav {
@@ -74,9 +67,63 @@ nav li {
     width: 100%;
     padding: 15px;
     margin: 0 auto;
+    position: fixed;
 }
 
 li img {
     margin-left: 15px;
-    width: 2vw;
+    width: 2.5vw;
+}
+footer {
+    padding: 5vh 0;
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #D3E2FF;    
+}
+
+.footer-text {
+    text-align: center;
+    color: gray;
+    font-size: 2.5vmin;
+}
+
+.selection {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #ffc9e8, #f6cef2, #ecd3f9, #e3d8fd, #dbddff, #d5e2ff, #d1e7ff, #d0ebff, #d2f1ff, #d6f6fe, #dcfbfe, #e3fffd);
+}
+.skills {
+    padding: 20vh 0;
+}
+
+.skill-text {
+    text-align: center;
+    font-size: 5vmin;
+    height: 15vh;
+}
+
+.skill-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    border: 3px;
+    overflow: hidden;    
+}
+
+.skill-item {
+    padding: 1.5vw;
+    margin: 1.5vw;
+    width: 22vh;
+    height: 22vw;
+}
+
+.skill-item img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 20vw;
+    height: 20vh;
 }
